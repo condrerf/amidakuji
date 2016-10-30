@@ -7,56 +7,50 @@
 
 2.プロジェクト構成
 
-answer/index.php あみだくじの動作確認用のスクリプトです。
-answer/data/error_empty.dat 動作確認テスト用のデータファイルです。
-answer/data/error_include_character.dat 動作確認テスト用のデータファイルです。
-answer/data/error_not_3_columns.dat 動作確認テスト用のデータファイルです。
-answer/data/error_one_row.dat 動作確認テスト用のデータファイルです。
-answer/data/example1.dat 例1のあみだくじデータファイルです。
-answer/data/example2.dat 例2のあみだくじデータファイルです。
-answer/src/Amidakuji.php あみだくじを管理するクラスです。
-answer/src/Coordinate.php XY座標を管理するクラスです。
-answer/src/Field.php あみだくじのフィールドを管理するクラスです。
-answer/src/Unit.php あみだくじのユニット(あみだくじの線を移動する主体)を管理するクラスです。
-answer/src/Line/Line.php あみだくじの線(縦/横)を管理するクラスです。
-answer/src/Line/TransverseLine.php あみだくじの横線を管理するクラスです。
-answer/src/Line/VerticalLine.php あみだくじの縦線を管理するクラスです。
-answer/tests/AmidakujiTest.php Amidakujiクラスのテストクラスです。
-answer/tests/CoordinateTest.php Coordinateクラスのテストクラスです。
-answer/tests/FieldTest.php Fieldクラスのテストクラスです。
-answer/tests/LineTest.php Lineクラスのテストクラスです。
-answer/tests/TransverseLineTest.php TransverseLineクラスのテストクラスです。
-answer/tests/UnitTest.php Unitクラスのテストクラスです。
-answer/tests/VerticalLineTest.php VerticalLineクラスのテストクラスです。
+index.php あみだくじの動作確認用のスクリプトです。
+data/error_empty.dat 動作確認テスト用のデータファイルです。
+data/error_include_character.dat 動作確認テスト用のデータファイルです。
+data/error_not_3_columns.dat 動作確認テスト用のデータファイルです。
+data/error_one_row.dat 動作確認テスト用のデータファイルです。
+data/example1.dat 例1のあみだくじデータファイルです。
+data/example2.dat 例2のあみだくじデータファイルです。
+src/Amidakuji.php あみだくじを管理するクラスです。
+src/Coordinate.php XY座標を管理するクラスです。
+src/Field.php あみだくじのフィールドを管理するクラスです。
+src/Unit.php あみだくじのユニット(あみだくじの線を移動する主体)を管理するクラスです。
+src/Line/Line.php あみだくじの線(縦/横)を管理するクラスです。
+src/Line/TransverseLine.php あみだくじの横線を管理するクラスです。
+src/Line/VerticalLine.php あみだくじの縦線を管理するクラスです。
+tests/AmidakujiTest.php Amidakujiクラスのテストクラスです。
+tests/CoordinateTest.php Coordinateクラスのテストクラスです。
+tests/FieldTest.php Fieldクラスのテストクラスです。
+tests/LineTest.php Lineクラスのテストクラスです。
+tests/TransverseLineTest.php TransverseLineクラスのテストクラスです。
+tests/UnitTest.php Unitクラスのテストクラスです。
+tests/VerticalLineTest.php VerticalLineクラスのテストクラスです。
 
 以下は、PHP.Skeletonにより自動生成されたファイルです。
-answer/.php_cs
-answer/.scrutinizer.yml
-answer/.travis.yml
-answer/composer.json
-answer/composer.lock
-answer/LICENSE
-answer/phpcs.xml
-answer/phpmd.xml
-answer/phpunit.xml.dist
-answer/src/Exception/ExceptionInterface.php
-answer/src/Exception/LogicException.php
-answer/src/Exception/RuntimeException.php
-answer/tests/bootstrap.php
-answer/tests/Fake/.placefolder
-
-以下は、課題に関する情報のファイルです。
-README.md
-questions/amida01.png
-questions/amida02.png
-questions/index.md
+.php_cs
+.scrutinizer.yml
+.travis.yml
+composer.json
+composer.lock
+LICENSE
+phpcs.xml
+phpmd.xml
+phpunit.xml.dist
+src/Exception/ExceptionInterface.php
+src/Exception/LogicException.php
+src/Exception/RuntimeException.php
+tests/bootstrap.php
+tests/Fake/.placefolder
 
 
 3.実行方法
 
-(1)answer/data/ディレクトリ内に、あみだくじのデータファイルを設置する。
+(1)data/ディレクトリ内に、あみだくじのデータファイルを設置する。
 (2)データファイル名を指定して、Amidakujiクラスのインスタンスを生成する。
 (3)最終的に到達する縦線の番号を指定して、findStartNumber関数を実行する。
 (4)findStartNumber関数の戻り値を出力する。
 
-実行例は、answer/index.phpをご覧ください。
+実行例は、index.phpをご覧ください。
